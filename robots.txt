@@ -15,7 +15,7 @@ User-agent: Google-Extended
 Allow: /
 
 # Sitemap
-Sitemap: https://massage-paradise.com/sitemap.xml
+Sitemap: https://massageparadise.xyz/sitemap.xml
 
 # Host (canonical)
-Host: massage-paradise.com
+Host: massageparadise.xyz
