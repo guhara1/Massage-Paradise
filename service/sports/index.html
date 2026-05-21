@@ -117,10 +117,10 @@ a{color:inherit;text-decoration:none}
 .skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:#fff;color:#000;padding:8px 12px;border-radius:6px;z-index:9999}
 body>header{position:sticky;top:0;z-index:1000;background:#0b0b0e;border-bottom:1px solid var(--line)}
 .nav{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 24px;gap:16px}
-.brand{display:inline-flex;align-items:center;line-height:0}.brand-logo{height:60px;width:auto;display:block}@media(max-width:540px){.brand-logo{height:50px}}
+.brand{display:inline-flex;align-items:center;line-height:0;flex-shrink:0}.brand-logo{height:84px;width:auto;display:block}@media(max-width:1100px){.brand-logo{height:72px}}@media(max-width:540px){.brand-logo{height:60px}}
 .menu{display:flex;align-items:center;gap:2px;list-style:none;margin:0;padding:0}
 .menu>li{position:relative}
-.menu>li>a{display:block;padding:10px 14px;font-weight:500;font-size:14px;color:var(--muted);border-radius:8px;transition:.15s}
+.menu>li>a{display:block;padding:10px 11px;font-weight:500;font-size:14px;color:var(--muted);border-radius:8px;transition:.15s}
 .menu>li>a:hover,.menu>li>a[aria-current]{color:var(--text);background:rgba(255,255,255,.04)}
 .menu>li>a[aria-haspopup="true"]::after{content:"";display:inline-block;margin-left:6px;border:4px solid transparent;border-top-color:currentColor;transform:translateY(2px);opacity:.6}
 .submenu{position:absolute;top:calc(100% + 4px);left:0;min-width:200px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.5);padding:8px;list-style:none;margin:0;z-index:1100;visibility:hidden;pointer-events:none}
@@ -132,7 +132,7 @@ body>header{position:sticky;top:0;z-index:1000;background:#0b0b0e;border-bottom:
 .submenu a:hover{background:rgba(255,255,255,.05);color:var(--text)}
 .cta-pill{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;background:var(--grad);color:#1a0d05;border-radius:999px;font-weight:700;font-size:13.5px;box-shadow:0 8px 24px rgba(201,138,107,.28)}
 .toggle{display:none;background:none;border:0;color:#fff;font-size:22px;padding:6px 10px;cursor:pointer}
-@media (max-width:980px){.toggle{display:block}.menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:10px 16px 20px;gap:2px}.menu.open{display:flex}.submenu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;background:transparent;padding:4px 8px 8px 16px}.nav .cta-pill{display:none}}
+@media (max-width:1100px){.toggle{display:block}.menu{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;padding:10px 16px 20px;gap:2px}.menu.open{display:flex}.submenu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;background:transparent;padding:4px 8px 8px 16px}.nav .cta-pill{display:none}}
 main{max-width:880px;margin:0 auto;padding:60px 24px 80px}
 .crumb{font-size:13px;color:var(--dim);margin-bottom:24px}
 .crumb a{color:var(--muted)}.crumb a:hover{color:var(--text)}.crumb span[aria-hidden]{margin:0 8px;color:var(--dim)}
@@ -259,7 +259,7 @@ footer{margin-top:80px;border-top:1px solid var(--line);padding:50px 24px 30px;b
 .foot-col li{margin:0 0 9px}
 .foot-col a{color:var(--muted);font-size:13.5px;transition:.2s;text-decoration:none}
 .foot-col a:hover{color:var(--gold)}
-.foot-brand .foot-logo{display:block;margin-bottom:18px;line-height:0}.foot-brand .foot-logo img{height:80px;width:auto;display:block;opacity:.95}
+.foot-brand .foot-logo{display:block;margin-bottom:20px;line-height:0}.foot-brand .foot-logo img{height:110px;width:auto;display:block;opacity:.95}
 .foot-brand .foot-logo .mark{width:24px;height:24px;border-radius:50%;background:var(--grad);box-shadow:0 0 16px rgba(233,184,167,.4)}
 .foot-brand p{color:var(--muted);font-size:13px;line-height:1.7;margin:0 0 20px;max-width:360px}
 .foot-trust{margin:0 0 16px}
@@ -284,7 +284,7 @@ footer{margin-top:80px;border-top:1px solid var(--line);padding:50px 24px 30px;b
 
 /* footer brand column override (prevent legacy .foot-brand flex inheritance) */
 .site-footer .foot-brand{display:block!important;align-items:initial;gap:0;font-size:13px;font-weight:400;margin-bottom:0}
-.site-footer .foot-brand .foot-logo{display:block!important;margin-bottom:18px;line-height:0}.site-footer .foot-brand .foot-logo img{height:80px;width:auto;display:block}
+.site-footer .foot-brand .foot-logo{display:block!important;margin-bottom:20px;line-height:0}.site-footer .foot-brand .foot-logo img{height:110px;width:auto;display:block}
 .site-footer .foot-brand .foot-logo .mark{width:24px;height:24px;border-radius:50%;background:var(--grad);box-shadow:0 0 16px rgba(233,184,167,.4);flex-shrink:0}
 .site-footer .foot-brand p{display:block;color:var(--muted);font-size:13px;line-height:1.7;margin:0 0 20px;max-width:360px}
 .site-footer .foot-trust{display:block;margin:0 0 16px}
@@ -310,7 +310,7 @@ footer{margin-top:80px;border-top:1px solid var(--line);padding:50px 24px 30px;b
 <a class="skip" href="#main">본문 바로가기</a>
 <header>
   <nav class="nav" aria-label="주 메뉴">
-    <a class="brand" href="/" aria-label="마사지 파라다이스 홈"><img src="/assets/logo-160.png" srcset="/assets/logo-160.png 1x,/assets/logo-320.png 2x" alt="마사지 파라다이스" width="70" height="60" class="brand-logo" decoding="async" fetchpriority="high"></a>
+    <a class="brand" href="/" aria-label="마사지 파라다이스 홈"><img src="/assets/logo-320.png" srcset="/assets/logo-160.png 1x,/assets/logo-320.png 2x" alt="마사지 파라다이스" width="98" height="84" class="brand-logo" decoding="async" fetchpriority="high"></a>
     <button class="toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="메뉴 열기">☰</button>
     <ul id="primary-menu" class="menu">
       <li><a href="/service/" aria-haspopup="true" aria-current="page">서비스</a><ul class="submenu"><li><a href="/service/swedish/">스웨디시</a></li><li><a href="/service/aroma/">아로마</a></li><li><a href="/service/thai/">타이</a></li><li><a href="/service/lomilomi/">로미로미</a></li><li><a href="/service/sports/">스포츠</a></li></ul></li>
@@ -446,7 +446,7 @@ footer{margin-top:80px;border-top:1px solid var(--line);padding:50px 24px 30px;b
   <div class="footer-wrap">
     <div class="footer-grid">
       <div class="foot-col foot-brand">
-        <div class="foot-logo"><img src="/assets/logo-160.png" srcset="/assets/logo-160.png 1x,/assets/logo-320.png 2x" alt="마사지 파라다이스" width="93" height="80" decoding="async" loading="lazy"></div>
+        <div class="foot-logo"><img src="/assets/logo-320.png" srcset="/assets/logo-160.png 1x,/assets/logo-320.png 2x" alt="마사지 파라다이스" width="128" height="110" decoding="async" loading="lazy"></div>
         <p>서울·경기·인천·부산 전 권역 프리미엄 출장마사지. 운영팀이 5개월 23,700건 배차 데이터를 직접 기록·공개합니다. 본사 직고용·외주 미사용·합법 근무 자격 검증.</p>
         <div class="foot-trust">
           <span>본사 직고용</span><span>연중무휴</span><span>출장비 0원</span><span>완료 후 결제</span>
@@ -550,7 +550,7 @@ footer{margin-top:80px;border-top:1px solid var(--line);padding:50px 24px 30px;b
   // 클릭/터치 폴백 — 호버가 안 먹는 환경에서도 동작
   document.querySelectorAll('.menu>li>a[aria-haspopup="true"]').forEach(function(a){
     a.addEventListener('click',function(e){
-      if(window.matchMedia('(max-width:980px)').matches) return;
+      if(window.matchMedia('(max-width:1100px)').matches) return;
       e.preventDefault();
       var li=this.parentNode;
       var was=li.classList.contains('open');
