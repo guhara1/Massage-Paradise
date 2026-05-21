@@ -308,7 +308,29 @@ footer{border-top:1px solid var(--line);padding:36px 24px;text-align:center;colo
 <a class="sticky-cta" href="tel:+821000000000">24시 예약 · 지금 전화하기</a>
 
 <script>
-(function(){var t=document.querySelector('.toggle'),m=document.getElementById('primary-menu');if(t&&m)t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)});var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});(function(){function warm(){document.querySelectorAll(".menu>li>.submenu").forEach(function(s){var p=s.style.display;s.style.display="block";s.getBoundingClientRect();s.style.display=p||"";});}if(document.readyState==="complete"){warm();}else{window.addEventListener("load",warm);}document.fonts&&document.fonts.ready&&document.fonts.ready.then(warm);document.querySelectorAll(".menu>li>a[aria-haspopup="true"]").forEach(function(a){a.addEventListener("click",function(e){if(window.matchMedia("(max-width:980px)").matches)return;e.preventDefault();var li=this.parentNode;var was=li.classList.contains("open");document.querySelectorAll(".menu>li.open").forEach(function(x){x.classList.remove("open");});if(!was)li.classList.add("open");});});document.addEventListener("click",function(e){if(!e.target.closest(".menu")){document.querySelectorAll(".menu>li.open").forEach(function(li){li.classList.remove("open");});}});})();})();
-</script>
+(function(){
+  var t=document.querySelector('.toggle'),m=document.getElementById('primary-menu');
+  if(t&&m)t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  function warm(){document.querySelectorAll('.menu>li>.submenu').forEach(function(s){var p=s.style.display;s.style.display='block';s.getBoundingClientRect();s.style.display=p||'';});}
+  if(document.readyState==='complete'){warm();}else{window.addEventListener('load',warm);}
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(warm);
+  document.querySelectorAll('.menu>li>a[aria-haspopup="true"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      if(window.matchMedia('(max-width:980px)').matches)return;
+      e.preventDefault();
+      var li=this.parentNode;
+      var was=li.classList.contains('open');
+      document.querySelectorAll('.menu>li.open').forEach(function(x){x.classList.remove('open');});
+      if(!was)li.classList.add('open');
+    });
+  });
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('.menu')){
+      document.querySelectorAll('.menu>li.open').forEach(function(li){li.classList.remove('open');});
+    }
+  });
+})();</script>
 </body>
 </html>

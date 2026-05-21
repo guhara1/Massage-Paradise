@@ -406,8 +406,8 @@ footer{border-top:1px solid var(--line);padding:60px 24px 40px;background:#08080
 
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>서울 25개 자치구</span><span>경기 25개 도시</span><span>인천 10개 군·구</span><span>24시간 연중무휴</span><span>1:1 프라이빗 케어</span><span>호텔·레지던스 출장</span>
-      <span>서울 25개 자치구</span><span>경기 25개 도시</span><span>인천 10개 군·구</span><span>24시간 연중무휴</span><span>1:1 프라이빗 케어</span><span>호텔·레지던스 출장</span>
+      <span>서울 25개 자치구</span><span>경기 31개 시·군</span><span>인천 10개 군·구</span><span>24시간 연중무휴</span><span>1:1 프라이빗 케어</span><span>호텔·레지던스 출장</span>
+      <span>서울 25개 자치구</span><span>경기 31개 시·군</span><span>인천 10개 군·구</span><span>24시간 연중무휴</span><span>1:1 프라이빗 케어</span><span>호텔·레지던스 출장</span>
     </div>
   </div>
 
@@ -463,7 +463,7 @@ footer{border-top:1px solid var(--line);padding:60px 24px 40px;background:#08080
       <a class="reg reveal" href="/locations/gyeonggi/">
         <div class="reg-inner">
           <span class="badge">GYEONGGI · 경기</span>
-          <h3>경기 25개 도시</h3>
+          <h3>경기 31개 시·군</h3>
           <p>분당·판교·일산·수원·부천·용인 핵심 권역.</p>
           <span class="more">경기 보기 <span class="arr">→</span></span>
         </div>
@@ -599,9 +599,27 @@ footer{border-top:1px solid var(--line);padding:60px 24px 40px;background:#08080
 <script>
 (function(){
   var t=document.querySelector('.toggle'),m=document.getElementById('primary-menu');
-  if(t&&m)t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)});
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});(function(){function warm(){document.querySelectorAll(".menu>li>.submenu").forEach(function(s){var p=s.style.display;s.style.display="block";s.getBoundingClientRect();s.style.display=p||"";});}if(document.readyState==="complete"){warm();}else{window.addEventListener("load",warm);}document.fonts&&document.fonts.ready&&document.fonts.ready.then(warm);document.querySelectorAll(".menu>li>a[aria-haspopup="true"]").forEach(function(a){a.addEventListener("click",function(e){if(window.matchMedia("(max-width:980px)").matches)return;e.preventDefault();var li=this.parentNode;var was=li.classList.contains("open");document.querySelectorAll(".menu>li.open").forEach(function(x){x.classList.remove("open");});if(!was)li.classList.add("open");});});document.addEventListener("click",function(e){if(!e.target.closest(".menu")){document.querySelectorAll(".menu>li.open").forEach(function(li){li.classList.remove("open");});}});})();;
+  if(t&&m)t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  function warm(){document.querySelectorAll('.menu>li>.submenu').forEach(function(s){var p=s.style.display;s.style.display='block';s.getBoundingClientRect();s.style.display=p||'';});}
+  if(document.readyState==='complete'){warm();}else{window.addEventListener('load',warm);}
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(warm);
+  document.querySelectorAll('.menu>li>a[aria-haspopup="true"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      if(window.matchMedia('(max-width:980px)').matches)return;
+      e.preventDefault();
+      var li=this.parentNode;
+      var was=li.classList.contains('open');
+      document.querySelectorAll('.menu>li.open').forEach(function(x){x.classList.remove('open');});
+      if(!was)li.classList.add('open');
+    });
+  });
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('.menu')){
+      document.querySelectorAll('.menu>li.open').forEach(function(li){li.classList.remove('open');});
+    }
+  });
 })();
 </script>
 </body>
