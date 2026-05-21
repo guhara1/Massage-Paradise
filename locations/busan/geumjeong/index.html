@@ -106,6 +106,20 @@ article p{margin:0 0 22px}
 footer{border-top:1px solid var(--line);padding:30px 24px;text-align:center;color:var(--dim);font-size:12.5px}
 .sticky-cta{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;background:var(--grad);color:#1a0d05;padding:14px 18px;border-radius:999px;font-weight:800;text-align:center;box-shadow:0 16px 40px rgba(0,0,0,.45)}
 @media (max-width:780px){.sticky-cta{display:block}}
+
+/* premium note-card (field-notes / about) */
+.note-card{position:relative;display:flex;gap:24px;padding:26px 28px;margin-bottom:14px;background:linear-gradient(135deg,var(--surface) 0%,var(--surface-2) 100%);border:1px solid var(--line);border-radius:18px;transition:.3s;overflow:hidden}
+.note-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--grad);opacity:0;transition:.3s}
+.note-card::after{content:"";position:absolute;top:-20px;right:-20px;width:180px;height:180px;background:radial-gradient(circle,rgba(244,210,156,.08),transparent 70%);opacity:0;transition:.45s;pointer-events:none}
+.note-card:hover{border-color:rgba(244,210,156,.28);transform:translateY(-2px);box-shadow:0 18px 44px rgba(0,0,0,.32)}
+.note-card:hover::before,.note-card:hover::after{opacity:1}
+.note-num{font-family:"Cormorant Garamond","Noto Serif KR",Georgia,serif;font-size:46px;font-weight:300;font-style:italic;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;line-height:1;min-width:56px;flex-shrink:0;padding-top:4px;letter-spacing:-.02em}
+.note-content{flex:1;min-width:0}
+.note-title{font-size:19px;font-weight:800;letter-spacing:-.02em;margin:0 0 10px;color:var(--text);line-height:1.32}
+.note-text{max-width:660px}
+.note-text p{margin:0 0 10px;color:#c8c8d0;font-size:14.5px;line-height:1.78}
+.note-text p:last-child{margin-bottom:0}
+@media (max-width:680px){.note-card{gap:14px;padding:20px 20px}.note-num{font-size:34px;min-width:40px}.note-title{font-size:16.5px}.note-text p{font-size:13.5px;line-height:1.75;margin-bottom:8px}}
 </style>
 </head>
 <body>
@@ -159,6 +173,11 @@ footer{border-top:1px solid var(--line);padding:30px 24px;text-align:center;colo
         <div class="f"><div class="lbl">교통 환승·역</div><div class="val">부산대역·장전역·구서역·두실역·남산역·범어사역·노포역</div></div>
         <div class="f"><div class="lbl">평균 도착 / 권역 평균</div><div class="val">32~45분 (전 시간대 평균)</div></div>
       </div>
+    <div class="note-card"><div class="note-num">05</div><div class="note-content"><h3 class="note-title">동(洞)별 평균 도착 시간 분포</h3><div class="note-text"><p>같은 금정구 안에서도 동(洞)별로 도착 시간 격차가 발생합니다.</p><p>참고 시간대(평일 22~24시 기준) 구서동 33분 · 부곡동 36분 · 장전동 38분 · 청룡동 41분 · 남산동 44분 수준입니다.</p><p>핵심 거점은 평균보다 빠르고 외곽 동은 약 5~8분 느립니다.</p><p>본 수치는 지난 5개월간 객실 앞 도착 기준 평균이며, 야간 신호·주차 동선·게이트 절차 시간을 모두 포함한 값입니다.</p></div></div></div>
+      <div class="note-card"><div class="note-num">06</div><div class="note-content"><h3 class="note-title">시간대별 콜 분포 특징</h3><div class="note-text"><p>금정구는 대학가·산악 권역 특성상 평일 22~24시 자택 콜과 주말 오전 콜 비중이 높습니다.</p><p>본사 디스패처는 이 시간대 패턴에 맞춰 매니저 거점·대기 위치를 사전 조정합니다.</p><p>사전 예약 시에는 시간대와 무관하게 정시 도착을 약속합니다.</p><p>즉시 콜은 디스패처가 콜 접수 직후 출발 가능 매니저를 5분 내 회신드립니다.</p></div></div></div>
+      <div class="note-card"><div class="note-num">07</div><div class="note-content"><h3 class="note-title">권역 성격에 맞는 추천 코스</h3><div class="note-text"><p>금정구 고객 데이터를 바탕으로 가장 선호도가 높은 코스는 감성케어 오일 60분 또는 아로마 습식입니다.</p><p>코스 시간은 90분이 가장 안정적이며, 첫 방문은 60분으로 시작해 컨디션을 확인하시는 것을 권합니다.</p><p>본 사이트 가격표 섹션에서 6개 코스의 모든 시간대 가격을 확인하실 수 있고, 케어 완료 후 결제가 원칙입니다.</p><p>특별한 컨디션·통증 부위는 예약 단계에서 디스패처에게 미리 안내하시면 매니저 매칭이 더 정확해집니다.</p></div></div></div>
+      <div class="note-card"><div class="note-num">08</div><div class="note-content"><h3 class="note-title">금정구 예약·결제·환불 한눈에</h3><div class="note-text"><p>금정구는 24시간 동일 가격·동일 품질로 운영되며, 평균 도착 32~45분 내 객실 앞 도착을 약속합니다.</p><p>새벽 시간대도 동일 가격이며 추가 비용은 일절 발생하지 않습니다.</p><p>예약은 본사 대표 전화 한 통으로 가능합니다.</p><p>디스패처가 권역·시간·코스를 확인한 뒤 가장 가까운 매니저를 즉시 매칭합니다.</p><p>케어 완료 후 결제가 원칙이며, 결제 수단은 카드·계좌이체·현금 모두 가능합니다.</p><p>견적 외 추가 비용이 발생하면 본사가 즉시 환불 처리하며, 매니저의 부정 청구는 채용 계약 위반으로 즉시 해촉됩니다.</p><p>본 페이지의 모든 운영 정책은 안전 자문 트레이너 가이드라인을 기반으로 작성되었고, 분기마다 재검토됩니다.</p><p>금정구 첫 방문 고객도 동일한 안전·품질 기준이 적용됩니다.</p></div></div></div>
+    <div class="note-card"><div class="note-num">09</div><div class="note-content"><h3 class="note-title">금정구 운영 철학과 부산 특화 안전 기준</h3><div class="note-text"><p>금정구는 부산권 본사 운영팀이 직접 관리하는 권역입니다.</p><p>본사 디스패처가 콜 접수·매니저 매칭·고객 응대·결제·환불을 모두 직접 수행하며, 외주·중개 모델은 사용하지 않습니다.</p><p>매니저 전원이 본사 직고용·본사 안전 자문 시험 통과 인력으로, 본 페이지의 모든 운영 정책은 본사가 직접 보증합니다.</p><p>부산권은 해양 스포츠 직후·항공 트랜짓 직후 게스트를 위한 별도 시술 강도 가이드라인(2단계 워밍업)을 운영하며, 이는 다른 광역시 권역에는 적용되지 않는 부산 특화 안전 기준입니다.</p><p>본 페이지 데이터는 분기마다 갱신되며 다음 갱신 예정은 2026년 8월입니다.</p></div></div></div>
     </article>
   </section>
 
@@ -172,17 +191,13 @@ footer{border-top:1px solid var(--line);padding:30px 24px;text-align:center;colo
     </div>
 
     <article>
-      <h3>1. 금정구 권역의 특징</h3>
-      <p>금정구는 부산대학교 캠퍼스와 금정산이 결합된 대학가 권역입니다. 구서동·장전동 자택 콜 비중이 크고 평일 22시 이후 콜이 주를 이룹니다. 부산대 외국인 유학생 콜은 영문 응대 매니저 매칭 비율이 다른 자치구 평균의 2배입니다.</p>
+      <div class="note-card"><div class="note-num">01</div><div class="note-content"><h3 class="note-title">금정구 권역의 특징</h3><div class="note-text"><p>금정구는 부산대학교 캠퍼스와 금정산이 결합된 대학가 권역입니다.</p><p>구서동·장전동 자택 콜 비중이 크고 평일 22시 이후 콜이 주를 이룹니다.</p><p>부산대 외국인 유학생 콜은 영문 응대 매니저 매칭 비율이 다른 자치구 평균의 2배입니다.</p></div></div></div>
 
-      <h3>2. 매니저 배치 및 도착 시간</h3>
-      <p>금정구 평균 도착 시간은 32~45분으로 권역 평균 38분 수준입니다. 같은 금정구 안에서도 핵심 거점(구서동, 부곡동)과 외곽 동(노포동, 금성동)의 도착 시간 차이가 5~12분 발생합니다. 첫 콜 응답 속도보다 객실 앞 도착까지의 시간을 줄이는 데 중점을 두며, 본 페이지의 도착 시간은 객실 앞 도착 기준으로 측정했습니다. 사전 예약 시에는 정시 도착을 약속합니다.</p>
+      <div class="note-card"><div class="note-num">02</div><div class="note-content"><h3 class="note-title">매니저 배치 및 도착 시간</h3><div class="note-text"><p>금정구 평균 도착 시간은 32~45분으로 권역 평균 38분 수준입니다.</p><p>같은 금정구 안에서도 핵심 거점(구서동, 부곡동)과 외곽 동(노포동, 금성동)의 도착 시간 차이가 5~12분 발생합니다.</p><p>첫 콜 응답 속도보다 객실 앞 도착까지의 시간을 줄이는 데 중점을 두며, 본 페이지의 도착 시간은 객실 앞 도착 기준으로 측정했습니다.</p><p>사전 예약 시에는 정시 도착을 약속합니다.</p></div></div></div>
 
-      <h3>3. 안전 가이드 — 최서윤 자문</h3>
-      <p>금정구에서 운영하는 매니저는 본사 채용 단계에서 동일한 안전 교육을 이수하며, 시술 강도 5단계 중 3단계를 넘지 않도록 교육받습니다. 3개월 이내 큰 수술 이력, 활동성 피부염, 발열 동반 감기 증상이 있는 고객의 경우 매니저가 예약을 정중히 거절합니다. 의료 행위가 아닌 건강관리 서비스라는 본질을 지키기 위한 기준이며, 이는 자문 케어 안전 자문 최서윤 선생이 정한 가이드라인입니다.</p>
+      <div class="note-card"><div class="note-num">03</div><div class="note-content"><h3 class="note-title">안전 가이드 — 최서윤 자문</h3><div class="note-text"><p>금정구에서 운영하는 매니저는 본사 채용 단계에서 동일한 안전 교육을 이수하며, 시술 강도 5단계 중 3단계를 넘지 않도록 교육받습니다.</p><p>3개월 이내 큰 수술 이력, 활동성 피부염, 발열 동반 감기 증상이 있는 고객의 경우 매니저가 예약을 정중히 거절합니다.</p><p>의료 행위가 아닌 건강관리 서비스라는 본질을 지키기 위한 기준이며, 이는 자문 케어 안전 자문 최서윤 선생이 정한 가이드라인입니다.</p></div></div></div>
 
-      <h3>4. 결제·예약 운영 원칙</h3>
-      <p>금정구 권역 내 출장은 별도의 출장비가 발생하지 않습니다. 결제는 현금·계좌이체·카드 모두 가능하며 케어 완료 후 결제가 원칙입니다. 견적 외 추가 비용은 일절 발생하지 않으며, 매니저가 도착 후 추가 비용을 요청하는 일은 채용 단계 계약 위반으로 즉시 해촉 대상입니다.</p>
+      <div class="note-card"><div class="note-num">04</div><div class="note-content"><h3 class="note-title">결제·예약 운영 원칙</h3><div class="note-text"><p>금정구 권역 내 출장은 별도의 출장비가 발생하지 않습니다.</p><p>결제는 현금·계좌이체·카드 모두 가능하며 케어 완료 후 결제가 원칙입니다.</p><p>견적 외 추가 비용은 일절 발생하지 않으며, 매니저가 도착 후 추가 비용을 요청하는 일은 채용 단계 계약 위반으로 즉시 해촉 대상입니다.</p></div></div></div>
     </article>
   </section>
 
