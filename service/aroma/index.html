@@ -399,6 +399,36 @@ footer{margin-top:80px;border-top:1px solid var(--line);padding:50px 24px 30px;b
 </footer>
 <script>
 (function(){var t=document.querySelector('.toggle'),m=document.getElementById('primary-menu');if(t&&m)t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)})})();
+(function(){
+  // 서브메뉴 첫 페인트 강제 워밍업 — 첫 호버에 일부 항목이 누락되는 환경 차단
+  function warm(){
+    document.querySelectorAll('.menu>li>.submenu').forEach(function(s){
+      var prev=s.style.display; s.style.display='block';
+      // 강제 reflow
+      s.getBoundingClientRect();
+      s.style.display=prev||'';
+    });
+  }
+  if(document.readyState==='complete'){warm();}else{window.addEventListener('load',warm);}
+  document.fonts&&document.fonts.ready&&document.fonts.ready.then(warm);
+
+  // 클릭/터치 폴백 — 호버가 안 먹는 환경에서도 동작
+  document.querySelectorAll('.menu>li>a[aria-haspopup="true"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      if(window.matchMedia('(max-width:980px)').matches) return;
+      e.preventDefault();
+      var li=this.parentNode;
+      var was=li.classList.contains('open');
+      document.querySelectorAll('.menu>li.open').forEach(function(x){x.classList.remove('open');});
+      if(!was) li.classList.add('open');
+    });
+  });
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('.menu')){
+      document.querySelectorAll('.menu>li.open').forEach(function(li){li.classList.remove('open');});
+    }
+  });
+})();
 </script>
 </body>
 </html>
