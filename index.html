@@ -254,8 +254,9 @@ section.wrap{max-width:1240px;margin:0 auto;padding:120px 24px}
 .svc:hover .more .arr{transform:translateX(4px)}
 
 /* REGIONS — big */
-.regions{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-@media (max-width:980px){.regions{grid-template-columns:1fr}}
+.regions{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+@media (max-width:980px){.regions{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.regions{grid-template-columns:1fr}}
 .reg{position:relative;border-radius:26px;overflow:hidden;border:1px solid var(--line);background:var(--surface);transition:.35s;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end}
 .reg::before{content:"";position:absolute;inset:0;background:
   radial-gradient(circle at 70% 30%,rgba(244,210,156,.18),transparent 60%),
@@ -362,6 +363,7 @@ footer{border-top:1px solid var(--line);padding:60px 24px 40px;background:#08080
           <li><a href="/locations/seoul/">서울</a></li>
           <li><a href="/locations/gyeonggi/">경기</a></li>
           <li><a href="/locations/incheon/">인천</a></li>
+          <li><a href="/locations/busan/">부산</a></li>
         </ul>
       </li>
       <li><a href="/therapists/" aria-haspopup="true">관리사</a><ul class="submenu"><li><a href="/therapists/korean/">한국 관리사</a></li><li><a href="/therapists/chinese/">중국 관리사</a></li><li><a href="/therapists/thai/">태국 관리사</a></li><li><a href="/therapists/vietnamese/">베트남 관리사</a></li><li><a href="/therapists/russian/">러시아 관리사</a></li><li><a href="/therapists/japanese/">일본 관리사</a></li></ul></li>
@@ -463,8 +465,8 @@ footer{border-top:1px solid var(--line);padding:60px 24px 40px;background:#08080
   <section class="wrap" id="region" style="padding-top:0">
     <div class="section-head reveal">
       <div class="label">— SERVICE AREA —</div>
-      <h2>서울·경기·인천 <span class="serif">전 지역</span> 출장</h2>
-      <p>60개 이상 도시에서 평균 45분 이내 도착. 지역 전담 매니저가 책임집니다.</p>
+      <h2>서울·경기·인천·부산 <span class="serif">전 지역</span> 출장</h2>
+      <p>4개 광역시도 80개 이상 도시·자치구에서 평균 45분 이내 도착. 지역 전담 매니저가 책임집니다.</p>
     </div>
     <div class="regions">
       <a class="reg reveal" href="/locations/seoul/">
@@ -489,6 +491,14 @@ footer{border-top:1px solid var(--line);padding:60px 24px 40px;background:#08080
           <h3>인천 10개 군·구</h3>
           <p>송도·청라·구월·부평·계양 전역 빠른 방문.</p>
           <span class="more">인천 보기 <span class="arr">→</span></span>
+        </div>
+      </a>
+      <a class="reg reveal" href="/locations/busan/">
+        <div class="reg-inner">
+          <span class="badge">BUSAN · 부산</span>
+          <h3>부산 16개 행정구</h3>
+          <p>해운대·서면·광안리·기장 등 부산 전 권역 25~50분.</p>
+          <span class="more">부산 보기 <span class="arr">→</span></span>
         </div>
       </a>
     </div>
