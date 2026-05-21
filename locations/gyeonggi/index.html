@@ -168,6 +168,23 @@ footer{border-top:1px solid var(--line);padding:36px 24px;text-align:center;colo
 .footer-bottom .legal{max-width:680px}
 .footer-bottom .policy a{color:var(--dim);margin:0 4px;transition:.2s;text-decoration:none}
 .footer-bottom .policy a:hover{color:var(--gold)}
+
+.company-info{padding:22px 0;border-bottom:1px solid var(--line)}
+.ci-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px 26px}
+.ci-item{display:flex;flex-direction:column;gap:3px;padding:6px 0}
+.ci-item .ci-k{font-size:10.5px;color:var(--gold);letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.ci-item .ci-v{font-size:13px;color:#d8d8de;letter-spacing:-.005em}
+@media(max-width:680px){.ci-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.ci-grid{grid-template-columns:1fr}}
+
+/* footer brand column override (prevent legacy .foot-brand flex inheritance) */
+.site-footer .foot-brand{display:block!important;align-items:initial;gap:0;font-size:13px;font-weight:400;margin-bottom:0}
+.site-footer .foot-brand .foot-logo{display:flex!important;flex-direction:row;align-items:center;gap:10px;font-weight:800;font-size:17px;margin-bottom:14px;color:var(--text)}
+.site-footer .foot-brand .foot-logo .mark{width:24px;height:24px;border-radius:50%;background:var(--grad);box-shadow:0 0 16px rgba(233,184,167,.4);flex-shrink:0}
+.site-footer .foot-brand p{display:block;color:var(--muted);font-size:13px;line-height:1.7;margin:0 0 20px;max-width:360px}
+.site-footer .foot-trust{display:block;margin:0 0 16px}
+.site-footer .foot-trust span{display:inline-flex;white-space:nowrap}
+.site-footer .social{display:flex;gap:10px;margin-top:8px}
 </style>
 </head>
 <body>
@@ -375,6 +392,15 @@ footer{border-top:1px solid var(--line);padding:36px 24px;text-align:center;colo
           <li><a href="/reviews/">후기</a></li>
           <li><a href="tel:+821000000000">24시 예약</a></li>
         </ul>
+      </div>
+    </div>
+    
+    <div class="company-info">
+      <div class="ci-grid">
+        <div class="ci-item"><span class="ci-k">회사</span><span class="ci-v">YH LAB</span></div>
+        <div class="ci-item"><span class="ci-k">대표</span><span class="ci-v">김유환</span></div>
+        <div class="ci-item"><span class="ci-k">사업자등록번호</span><span class="ci-v">815-26-00585</span></div>
+        <div class="ci-item"><span class="ci-k">주소</span><span class="ci-v">경기도 파주시 청석로 268</span></div>
       </div>
     </div>
     <div class="footer-bottom">
