@@ -1,6 +1,21 @@
 User-agent: *
 Allow: /
+
+# Disallow admin and api endpoints
 Disallow: /admin/
 Disallow: /api/
+Disallow: /tmp/
 
+# AI training crawlers (allowed by default — site is public)
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap
 Sitemap: https://massage-paradise.com/sitemap.xml
+
+# Host (canonical)
+Host: massage-paradise.com
