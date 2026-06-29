@@ -6,6 +6,14 @@ Disallow: /admin/
 Disallow: /api/
 Disallow: /tmp/
 
+# Naver search crawler (Yeti) — explicit allow for fast indexing
+User-agent: Yeti
+Allow: /
+
+# Bing
+User-agent: bingbot
+Allow: /
+
 # AI training crawlers (allowed by default — site is public)
 User-agent: GPTBot
 Allow: /
@@ -14,8 +22,9 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Sitemap
+# Sitemaps (XML sitemap + RSS feed for fastest discovery)
 Sitemap: https://massageparadise.netlify.app/sitemap.xml
+Sitemap: https://massageparadise.netlify.app/rss.xml
 
 # Host (canonical)
 Host: massageparadise.netlify.app

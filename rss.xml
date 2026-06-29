@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>마사지 파라다이스 — 24시 프리미엄 출장마사지</title>
+  <link>https://massageparadise.netlify.app/</link>
+  <atom:link href="https://massageparadise.netlify.app/rss.xml" rel="self" type="application/rss+xml"/>
+  <description>서울·경기·인천·부산 전 지역 24시간 출장마사지. 신규 매거진과 지역·서비스 안내를 발행합니다.</description>
+  <language>ko</language>
+  <lastBuildDate>Mon, 29 Jun 2026 09:00:00 +0900</lastBuildDate>
+  <ttl>60</ttl>
+  <item>
+    <title>마사지 파라다이스 | 서울·경기·인천·부산 24시 프리미엄 출장마사지</title>
+    <link>https://massageparadise.netlify.app/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>서울·경기·인천·부산 전 지역 24시간 프리미엄 출장마사지. 1:1 전문 관리사 평균 45분 내 방문 케어.</description>
+  </item>
+  <item>
+    <title>전국 출장마사지 지역 — 서울·경기·인천·부산 82개 행정구</title>
+    <link>https://massageparadise.netlify.app/locations/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/locations/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>4개 광역시도 82개 행정구별 출장마사지 운영 데이터와 실제 후기.</description>
+  </item>
+  <item>
+    <title>서울 출장마사지 — 25개 자치구 전 지역</title>
+    <link>https://massageparadise.netlify.app/locations/seoul/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/locations/seoul/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>서울 25개 자치구 24시 출장마사지. 자치구별 도착 시간·후기.</description>
+  </item>
+  <item>
+    <title>경기 출장마사지 — 31개 시·군 전 지역</title>
+    <link>https://massageparadise.netlify.app/locations/gyeonggi/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/locations/gyeonggi/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>경기 31개 시·군 24시 출장마사지. 권역별 운영 데이터·후기.</description>
+  </item>
+  <item>
+    <title>인천 출장마사지 — 10개 군·구 전 지역</title>
+    <link>https://massageparadise.netlify.app/locations/incheon/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/locations/incheon/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>인천 10개 군·구 24시 출장마사지. 송도·청라·부평 빠른 방문.</description>
+  </item>
+  <item>
+    <title>부산 출장마사지 — 16개 행정구 전 지역</title>
+    <link>https://massageparadise.netlify.app/locations/busan/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/locations/busan/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>부산 16개 행정구 24시 출장마사지. 해운대·서면·광안리 케어.</description>
+  </item>
+  <item>
+    <title>출장마사지 서비스 — 스웨디시·아로마·타이·로미로미·스포츠</title>
+    <link>https://massageparadise.netlify.app/service/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/service/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>5종 출장마사지 서비스 안내. 기법별 특징과 실제 후기.</description>
+  </item>
+  <item>
+    <title>출장마사지 관리사 — 국적별 합법 직고용 매니저</title>
+    <link>https://massageparadise.netlify.app/therapists/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/therapists/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>한국·중국·태국·베트남·러시아·일본 관리사 운영 안내와 후기.</description>
+  </item>
+  <item>
+    <title>출장마사지 요금표 — 코스·시간별 전 가격 공개</title>
+    <link>https://massageparadise.netlify.app/pricing/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/pricing/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>전 코스 시간별 요금 공개. 출장비 0원·완료 후 결제.</description>
+  </item>
+  <item>
+    <title>출장마사지 후기 — 실제 인증 케어 후기 모음</title>
+    <link>https://massageparadise.netlify.app/reviews/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/reviews/</guid>
+    <pubDate>Mon, 29 Jun 2026 09:00:00 +0900</pubDate>
+    <description>본인 확인 동의 사례 기반 실제 케어 후기. 광고용 가짜 후기 없음.</description>
+  </item>
+  <item>
+    <title>야간·새벽 출장마사지 시간대 가이드 — 22~07시 콜 패턴과 권장 코스</title>
+    <link>https://massageparadise.netlify.app/magazine/night-care-guide/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/magazine/night-care-guide/</guid>
+    <pubDate>Mon, 25 May 2026 09:00:00 +0900</pubDate>
+    <category>매거진</category>
+    <description>본사 운영팀이 5개월 23,700건 배차 데이터에서 야간·새벽 콜 패턴을 분석하고 시간대별 권장 코스를 안내합니다.</description>
+  </item>
+  <item>
+    <title>출장마사지 첫 이용 — 예약부터 케어까지 7단계</title>
+    <link>https://massageparadise.netlify.app/magazine/first-visit-guide/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/magazine/first-visit-guide/</guid>
+    <pubDate>Sun, 12 Apr 2026 09:00:00 +0900</pubDate>
+    <category>매거진</category>
+    <description>출장마사지를 처음 이용하시는 분을 위한 7단계 가이드. 예약·도착·결제까지 한눈에.</description>
+  </item>
+  <item>
+    <title>호텔 출장 케어 — 게이트·익명 영수증·시차 가이드</title>
+    <link>https://massageparadise.netlify.app/magazine/hotel-care-tips/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/magazine/hotel-care-tips/</guid>
+    <pubDate>Sun, 05 Apr 2026 09:00:00 +0900</pubDate>
+    <category>매거진</category>
+    <description>5성급 호텔 출장 케어 시 알아두면 좋은 보안 동선·익명 영수증·체크인 시차 가이드.</description>
+  </item>
+  <item>
+    <title>스웨디시 vs 아로마 vs 타이 — 코스 선택 가이드</title>
+    <link>https://massageparadise.netlify.app/magazine/course-comparison/</link>
+    <guid isPermaLink="true">https://massageparadise.netlify.app/magazine/course-comparison/</guid>
+    <pubDate>Sat, 28 Mar 2026 09:00:00 +0900</pubDate>
+    <category>매거진</category>
+    <description>3가지 대표 코스의 차이를 비교합니다. 시술 강도·오일 사용·추천 대상까지.</description>
+  </item>
+</channel>
+</rss>
