@@ -15,7 +15,7 @@ User-agent: Google-Extended
 Allow: /
 
 # Sitemap
-Sitemap: https://massageparadise.xyz/sitemap.xml
+Sitemap: https://massageparadise.netlify.app/sitemap.xml
 
 # Host (canonical)
-Host: massageparadise.xyz
+Host: massageparadise.netlify.app
